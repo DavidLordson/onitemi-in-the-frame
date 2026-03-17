@@ -8,7 +8,7 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      background-color: #f5f0e8;
+      background-color: #FFE5EC;
       font-family: Georgia, serif;
       min-height: 100vh;
       display: flex;
@@ -21,14 +21,14 @@
       font-size: 2rem;
       letter-spacing: 0.15em;
       text-transform: uppercase;
-      color: #2c1a0e;
+      color: #000000;
       margin-bottom: 8px;
       font-weight: normal;
     }
 
     .subtitle {
       font-size: 0.95rem;
-      color: #7a5c3a;
+      color: #000000;
       letter-spacing: 0.1em;
       margin-bottom: 60px;
       font-style: italic;
@@ -53,23 +53,10 @@
     }
 
     .frame {
-      position: relative;
-      padding: 14px;
-      background:
-        linear-gradient(145deg, #b8860b, #ffd700, #8b6914, #daa520, #b8860b);
-      box-shadow:
-        0 0 0 2px #5c3d00,
-        4px 4px 16px rgba(0,0,0,0.45),
-        inset 0 0 8px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       cursor: pointer;
-    }
-
-    .frame::before {
-      content: '';
-      position: absolute;
-      inset: 4px;
-      border: 2px solid rgba(255,255,255,0.25);
-      pointer-events: none;
     }
 
     .frame img {
@@ -77,15 +64,25 @@
       width: 260px;
       height: 320px;
       object-fit: cover;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
     }
 
     .frame .label {
       text-align: center;
       margin-top: 10px;
       font-size: 0.75rem;
-      color: #2c1a0e;
+      color: #000000;
       letter-spacing: 0.05em;
       font-style: italic;
+      max-width: 260px;
+    }
+
+    .no-link {
+      display: block;
+    }
+
+    .no-link .frame {
+      cursor: default;
     }
   </style>
 </head>
@@ -103,7 +100,75 @@
       </div>
     </a>
 
-    <!-- More frames will be added here -->
+    <a class="frame-link" href="poems/fortitude-of-forgiveness.html">
+      <div class="frame">
+        <img src="Fortitude of Forgiveness.png" alt="Fortitude Of Forgiveness" />
+        <div class="label">Fortitude Of Forgiveness</div>
+      </div>
+    </a>
+
+    <a class="frame-link" href="poems/good-flirt.html">
+      <div class="frame">
+        <img src="Good Flirt.png" alt="Good Flirt" />
+        <div class="label">Good Flirt</div>
+      </div>
+    </a>
+
+    <a class="frame-link" href="poems/have-you-ever.html">
+      <div class="frame">
+        <img src="Have you ever.png" alt="Have You Ever" />
+        <div class="label">Have You Ever</div>
+      </div>
+    </a>
+
+    <a class="frame-link" href="poems/pink-grass-blue-boy.html">
+      <div class="frame">
+        <img src="Pink Grass, Blue Boy.jpg" alt="Pink Grass, Blue Boy" />
+        <div class="label">Pink Grass, Blue Boy</div>
+      </div>
+    </a>
+
+    <a class="frame-link" href="poems/to-lasso-a-storm.html">
+      <div class="frame">
+        <img src="To Lasso A Storm.png" alt="To Lasso A Storm" />
+        <div class="label">To Lasso A Storm</div>
+      </div>
+    </a>
+
+    <a class="frame-link" href="poems/to-love-is-to-understand.html">
+      <div class="frame">
+        <img src="To love is To Understand.png" alt="To Love Is To Understand" />
+        <div class="label">To Love Is To Understand</div>
+      </div>
+    </a>
+
+    <a class="frame-link" href="poems/onitemi.html">
+      <div class="frame">
+        <img src="Onitemi.jpg" alt="Onitemi" />
+        <div class="label">Onitemi</div>
+      </div>
+    </a>
+
+    <div class="no-link">
+      <div class="frame">
+        <img src="Lady in the Pink Dress.jpg" alt="Lady in the Pink Dress" />
+        <div class="label">Lady in the Pink Dress</div>
+      </div>
+    </div>
+
+    <div class="no-link">
+      <div class="frame">
+        <img src="The Gentle Strokes that painted thee.png" alt="The Gentle Strokes that painted thee" />
+        <div class="label">The Gentle Strokes that painted thee</div>
+      </div>
+    </div>
+
+    <div class="no-link">
+      <div class="frame">
+        <img src="Universe in the palm of my hands II.jpg" alt="Universe in the palm of my hands II" />
+        <div class="label">Universe in the palm of my hands II</div>
+      </div>
+    </div>
 
   </div>
 
