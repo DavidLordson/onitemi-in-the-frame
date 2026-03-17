@@ -39,39 +39,43 @@
     }
 
     .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-      justify-content: center;
+      columns: 3 280px;
+      column-gap: 32px;
       max-width: 1200px;
+      width: 100%;
     }
 
     .frame-link {
       text-decoration: none;
       display: block;
+      break-inside: avoid;
+      margin-bottom: 32px;
       transition: transform 0.3s ease;
     }
 
     .frame-link:hover {
-      transform: scale(1.03);
+      transform: scale(1.02);
     }
 
-    .frame {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      cursor: pointer;
+    /* Wood frame */
+    .frame-link.wood .frame {
+      padding: 10px;
+      background: linear-gradient(135deg, #7a4a2a 0%, #a0622e 40%, #6b3d1e 60%, #a0622e 100%);
+      box-shadow: 0 6px 28px rgba(0,0,0,0.35), inset 0 0 12px rgba(0,0,0,0.25);
+    }
+
+    /* Gold frame */
+    .frame-link.gold .frame {
+      padding: 12px;
+      background: linear-gradient(135deg, #c9a84c 0%, #f0d060 30%, #b8860b 55%, #f0d060 80%, #c9a84c 100%);
+      box-shadow: 0 6px 28px rgba(0,0,0,0.35), inset 0 0 12px rgba(0,0,0,0.2);
     }
 
     .frame img {
       display: block;
-      width: 260px;
-      height: 320px;
-      object-fit: cover;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      width: 100%;
+      height: auto;
     }
-
-
   </style>
 </head>
 <body>
@@ -81,67 +85,67 @@
 
   <div class="gallery">
 
-    <a class="frame-link" href="poems/24-years-of-gods-elegance-in-you.html">
+    <a class="frame-link wood" href="poems/24-years-of-gods-elegance-in-you.html">
       <div class="frame">
         <img src="24 Years of God's Elegance in You.jpg" alt="24 Years of God's Elegance in You" />
       </div>
     </a>
 
-    <a class="frame-link" href="poems/fortitude-of-forgiveness.html">
+    <a class="frame-link gold" href="poems/fortitude-of-forgiveness.html">
       <div class="frame">
         <img src="Fortitude of Forgiveness.png" alt="Fortitude Of Forgiveness" />
       </div>
     </a>
 
-    <a class="frame-link" href="poems/good-flirt.html">
+    <a class="frame-link wood" href="poems/good-flirt.html">
       <div class="frame">
         <img src="Good Flirt.png" alt="Good Flirt" />
       </div>
     </a>
 
-    <a class="frame-link" href="poems/have-you-ever.html">
+    <a class="frame-link gold" href="poems/have-you-ever.html">
       <div class="frame">
         <img src="Have you ever.png" alt="Have You Ever" />
       </div>
     </a>
 
-    <a class="frame-link" href="poems/pink-grass-blue-boy.html">
+    <a class="frame-link wood" href="poems/pink-grass-blue-boy.html">
       <div class="frame">
         <img src="Pink Grass, Blue Boy.jpg" alt="Pink Grass, Blue Boy" />
       </div>
     </a>
 
-    <a class="frame-link" href="poems/to-lasso-a-storm.html">
+    <a class="frame-link gold" href="poems/to-lasso-a-storm.html">
       <div class="frame">
         <img src="To Lasso A Storm.png" alt="To Lasso A Storm" />
       </div>
     </a>
 
-    <a class="frame-link" href="poems/to-love-is-to-understand.html">
+    <a class="frame-link wood" href="poems/to-love-is-to-understand.html">
       <div class="frame">
         <img src="To love is To Understand.png" alt="To Love Is To Understand" />
       </div>
     </a>
 
-    <a class="frame-link" href="poems/onitemi.html">
+    <a class="frame-link gold" href="poems/onitemi.html">
       <div class="frame">
         <img src="Onitemi.jpg" alt="Onitemi" />
       </div>
     </a>
 
-    <a class="frame-link" href="poems/lady-in-the-pink-dress.html">
+    <a class="frame-link wood" href="poems/lady-in-the-pink-dress.html">
       <div class="frame">
         <img src="Lady in the Pink Dress.jpg" alt="Lady in the Pink Dress" />
       </div>
     </a>
 
-    <a class="frame-link" href="poems/the-gentle-strokes-that-painted-thee.html">
+    <a class="frame-link gold" href="poems/the-gentle-strokes-that-painted-thee.html">
       <div class="frame">
         <img src="The Gentle Strokes that painted thee.png" alt="The Gentle Strokes that painted thee" />
       </div>
     </a>
 
-    <a class="frame-link" href="poems/universe-in-the-palm-of-my-hands-ii.html">
+    <a class="frame-link wood" href="poems/universe-in-the-palm-of-my-hands-ii.html">
       <div class="frame">
         <img src="Universe in the palm of my hands II.jpg" alt="Universe in the palm of my hands II" />
       </div>
