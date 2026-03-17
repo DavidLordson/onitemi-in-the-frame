@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Gentle Strokes that painted thee</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #FFE5EC;
+      font-family: Georgia, serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 24px;
+    }
+
+    .back {
+      position: fixed;
+      top: 24px;
+      left: 28px;
+      text-decoration: none;
+      color: #000000;
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      opacity: 0.7;
+      transition: opacity 0.2s;
+    }
+
+    .back:hover { opacity: 1; }
+    .back::before { content: '← '; }
+
+    .poem-card {
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .poem-image {
+      width: 100%;
+      max-width: 340px;
+      display: block;
+      margin: 0 auto 40px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.15);
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      color: #000000;
+      letter-spacing: 0.12em;
+      font-weight: normal;
+      margin-bottom: 36px;
+      text-transform: uppercase;
+    }
+
+    .poem {
+      color: #000000;
+      font-size: 1.05rem;
+      line-height: 1.95;
+      text-align: left;
+    }
+
+    .poem p { margin-bottom: 1.4em; }
+
+    hr {
+      border: none;
+      border-top: 1px solid #000000;
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <a class="back" href="../index.html">Gallery</a>
+
+  <div class="poem-card">
+
+    <img class="poem-image" src="../The Gentle Strokes that painted thee.png" alt="The Gentle Strokes that painted thee" />
+
+    <h1>The Gentle Strokes that painted thee</h1>
+
+    <hr />
+
+    <div class="poem">
+      <p>
+        Woman in the frame<br />
+        Envy of Mona Lisa<br />
+        Let my fingers take in<br />
+        The tapestry of your greatness
+      </p>
+
+      <p>
+        I sit at your empty golden plaque<br />
+        Words unable to quantify<br />
+        What your maker put in you
+      </p>
+
+      <p>
+        I see men come and go<br />
+        They adore the woman<br />
+        Secured behind glass<br />
+        They write words on the plaque<br />
+        Your hands step out of the frame<br />
+        To wipe off their assumptions<br />
+        Feeble attempts to capture<br />
+        The beauty of my beloved
+      </p>
+
+      <p>
+        You return to your smile<br />
+        Waiting patiently<br />
+        As I take a tulip stalk<br />
+        From its five brethren<br />
+        With gentle strokes to paint thee
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>
